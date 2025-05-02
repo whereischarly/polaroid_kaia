@@ -1,28 +1,49 @@
-
 body {
-  font-family: 'Arial', sans-serif;
-  text-align: center;
-  background: #fefefe;
   margin: 0;
-  padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+  background-image: url('../img/fondo-polaroid.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.container {
-  max-width: 400px;
-  margin: auto;
+
+.polaroid-container {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  padding: 16px;
+  width: 320px;
+  text-align: center;
+  position: relative;
 }
-video {
+
+#video, #photo {
   width: 100%;
-  border-radius: 8px;
+  height: auto;
+  border: 2px solid #e54a91;
+  margin-bottom: 12px;
+  object-fit: cover;
 }
-canvas {
-  display: none;
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
 }
-#download {
-  display: none;
-  margin-top: 10px;
-  padding: 10px;
-  background: #222;
+
+button {
+  background: #e54a91;
+  border: none;
   color: white;
-  text-decoration: none;
-  border-radius: 5px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+button:hover {
+  background: #c43776;
 }
