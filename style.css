@@ -1,28 +1,67 @@
-
 body {
-  font-family: 'Arial', sans-serif;
-  text-align: center;
-  background: #fefefe;
   margin: 0;
-  padding: 20px;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background: url('fondo-polaroid.jpg') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
 }
+
 .container {
-  max-width: 400px;
-  margin: auto;
+  position: relative;
+  width: 350px;
+  height: 500px;
 }
-video {
-  width: 100%;
-  border-radius: 8px;
+
+video, canvas {
+  position: absolute;
+  top: 60px;
+  left: 25px;
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  object-fit: cover;
 }
-canvas {
-  display: none;
-}
-#download {
-  display: none;
-  margin-top: 10px;
-  padding: 10px;
-  background: #222;
-  color: white;
-  text-decoration: none;
+
+.frame {
+  background: rgba(255, 255, 255, 0.95);
+  width: 350px;
+  height: 430px;
   border-radius: 5px;
+  padding-top: 60px;
+  text-align: center;
+  box-shadow: 0px 5px 20px rgba(0,0,0,0.3);
+  z-index: -1;
+}
+
+.text {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  font-size: 20px;
+  color: #e38aa2;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.controls {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+button, a {
+  background-color: #f4b2c6;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 10px;
+  text-decoration: none;
+  text-align: center;
 }
