@@ -1,0 +1,91 @@
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Layout body */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f2e8df;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Contenedor Polaroid */
+.polaroid {
+  width: 90%;
+  max-width: 360px;
+  background: #fff;
+  padding: 16px;
+  padding-bottom: 60px;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+  position: relative;
+}
+
+/* Marco de la “foto” */
+.photo-frame {
+  width: 100%;
+  padding-top: 100%;
+  position: relative;
+  background: #eee;
+  border: 8px solid #fff;
+  box-shadow: inset 0 0 0 4px #ddd;
+}
+
+/* Video insertado dentro del marco */
+.photo-frame video {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+}
+
+/* Canvas (oculto) */
+.photo-frame canvas {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+}
+
+/* Controles debajo */
+.controls {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 16px;
+  left: 16px; right: 16px;
+}
+
+/* Botones */
+.btn {
+  background: #e54a91;
+  border: none;
+  color: #fff;
+  font-size: 1.4rem;
+  width: 48px; height: 48px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Efecto al presionar */
+.btn:active {
+  transform: scale(0.95);
+}
+
+/* Responsive */
+@media (max-width: 400px) {
+  .btn {
+    width: 56px; height: 56px;
+    font-size: 1.6rem;
+  }
+}
