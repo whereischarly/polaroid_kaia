@@ -1,0 +1,82 @@
+
+body {
+  margin: 0;
+  font-family: 'Georgia', serif;
+  background-color: #f4e3d7;
+  overflow-x: hidden;
+}
+
+.background-pattern {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-image: url('Kaia Lana QR2.png');
+  background-repeat: repeat;
+  background-size: 200px;
+  opacity: 0.2;
+  z-index: -1;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5vh 2rem;
+  text-align: center;
+}
+
+.artist-name {
+  font-size: 3rem;
+  color: #50232e;
+  margin-bottom: 1.5rem;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.social-links svg {
+  transition: transform 0.3s ease;
+}
+
+.social-links svg:hover {
+  transform: scale(1.1);
+}
+
+.pre-save-section {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 2rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+}
+
+.main-image {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 1.5rem;
+}
+
+.presave-title {
+  font-size: 2rem;
+  color: #8b5e3c;
+  margin-bottom: 1rem;
+}
+
+.platform-links a {
+  display: inline-block;
+  margin: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #a55d63;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.platform-links a:hover {
+  background-color: #7e4147;
+}
